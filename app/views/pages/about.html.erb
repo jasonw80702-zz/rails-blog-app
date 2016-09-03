@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style type="text/css">
+      #header {
+        /*border: 4px black solid;*/
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      * {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      #body {
+        /*border: 4px black solid;*/
+        height: 100px;
+        text-align: center;
+      }
+
+      #left-body {
+        width: 50%;
+        height: 100px;
+        float: left;
+      }
+
+      #right-body {
+        width: 50%;
+        height: 100px;
+        float: right;
+      }
+
+      .linkage {
+        color: red;
+      }
+
+      .img {
+        width: 50%;
+        height: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=header>
+      <h1>About Me</h1>
+    </div>
+
+    <div id=body>
+      <h2> Who am I? </h2>
+      <p> I am Jason Wang. I love Rick and Morty.</p>
+    </div>
+
+    <%= image_tag 'rickandmorty.png', class: "img" %>
+
+    <%= link_to 'Home', root_path, class: "linkage" %>
+  </body>
+</html>
