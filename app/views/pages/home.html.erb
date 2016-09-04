@@ -6,81 +6,16 @@
     <title>Home Page</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <style type="text/css">
-      #header {
-        /*border: 4px black solid;*/
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-
-      * {
-        font-family: 'Open Sans', sans-serif;
-      }
-
-      #body {
-        /*border: 4px black solid;*/
-        height: 500px;
-      }
-
-      #left-body {
-        width: 50%;
-        height: 500px;
-        float: left;
-      }
-
-      #right-body {
-        width: 50%;
-        height: 500px;
-        float: right;
-      }
-
-      .linkage {
-        color: red;
-      }
-    </style>
   </head>
 
   <body>
-    <div id=header>
-      <h1> Welcome to the Website! </h1>
+    <div class="jumbotron center">
+      <h1>YOGG BLOG DAWG</h1>
+      <%= link_to "Sign up now", "#", class: "btn btn-primary btn-lg" %>
     </div>
 
-    <div id=body>
-      <h2> Website home page content title </h2>
-      <p> This website is a website. Some content will be put here in the website to best represent what the website would contain. The purpose of this website
-      is to contain information about the website. </p>
-
-      <div id=left-body>
-        <p>What this website does:</p>
-        <ul>
-          <li>Make money</li>
-          <li>Run stuff</li>
-          <li>Create life</li>
-          <li>Destroy enemies</li>
-          <li>Rule</li>
-          <li>Hoard gold and other gems</li>
-          <li>Look to the future</li>
-        </ul>
-      </div>
-
-      <div id=right-body>
-        <p>What this website does not do:</p>
-        <ul>
-          <li>Discriminate</li>
-          <li>Contaminate</li>
-          <li>Give all the right answers</li>
-          <li>Grow on you</li>
-          <li>Tell you how to live life</li>
-          <li>Provide clarification</li>
-          <li>Anything</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <%= link_to 'About Me', about_path, class: "linkage" %> ||
-    <%= link_to 'Alpha Blog', articles_path %>
+    <!-- <%= link_to 'About Me', about_path, class: "linkage" %> ||
+    <%= link_to 'Alpha Blog', articles_path %> -->
   </body>
 
 </html>
